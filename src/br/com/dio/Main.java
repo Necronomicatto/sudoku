@@ -2,6 +2,7 @@ package br.com.dio;
 
 import br.com.dio.model.Board;
 import br.com.dio.model.Space;
+import br.com.dio.model.UI;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +18,6 @@ import static java.util.stream.Collectors.toMap;
 public class Main {
 
     private final static Scanner scanner = new Scanner(System.in);
-
     private static Board board;
 
     private final static int BOARD_LIMIT = 9;
@@ -30,6 +30,7 @@ public class Main {
                 ));
         var option = -1;
         while (true){
+            new UI();
             System.out.println("Selecione uma das opções a seguir");
             System.out.println("1 - Iniciar um novo Jogo");
             System.out.println("2 - Colocar um novo número");
